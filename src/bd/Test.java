@@ -8,11 +8,11 @@ public class Test {
 		// TODO Auto-generated method stub
 		try {
 			Class.forName("oracle.jdbc.driver.OracleDriver");
-			 System.out.println("OK");
+			System.out.println("OK");
 		} catch (ClassNotFoundException ex) {
 			System.out.println("Error: " + ex.getMessage() + " not found");
 		}
-		Connection connection=OraConn.open();
+		Connection connection = OraConn.open();
 		OraConn.close(connection);
 	}
 

@@ -13,7 +13,8 @@ public class OraConn {
 			System.out.println("Polaczenie jest otwarte");
 			return connection;
 		} catch (SQLException ex) {
-			System.out.println("Nie mozna otworzyc polaczenia! Error Code: "+ ex.getErrorCode() + "; " + ex.getMessage());
+			System.out.println(
+					"Nie mozna otworzyc polaczenia! Error Code: " + ex.getErrorCode() + "; " + ex.getMessage());
 			return null;
 		}
 	}
@@ -23,8 +24,8 @@ public class OraConn {
 			connection.close();
 			System.out.println("Polaczenie jest zamkniête");
 		} catch (SQLException ex) {
-			System.out.println("Nie mozna zamknac polaczenia! Error code: " + ex.getErrorCode() + "; "
-					+ ex.getMessage());
+			System.out
+					.println("Nie mozna zamknac polaczenia! Error code: " + ex.getErrorCode() + "; " + ex.getMessage());
 		}
 	}
 
